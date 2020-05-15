@@ -9,7 +9,7 @@
 <br><br><br>
     <div class=" shadow-lg  container bg-white form-group col-lg-4 " style="padding:5%;">
     <center>
-    <h1>Empresa SIMON S.A</h1>
+    <h1>Complejo SIMON S.A</h1>
     <form action="ejercicio2e.php" method="post">
     <label for="cants">Ingrese la cantidad de empleados</label>
     <br>
