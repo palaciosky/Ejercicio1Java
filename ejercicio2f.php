@@ -3,7 +3,7 @@ if (isset($_POST["txtcant"])) {
     $cant = $_POST["txtcant"];
     # code...
     echo '
-   
+    <div class="container-fluid">
     <br>
     <center><h1>Resultados del calculo</h1></center>
     <br>
@@ -15,7 +15,7 @@ if (isset($_POST["txtcant"])) {
    $sum2 = 0; 
    $sum = 0;
     for ($i=1; $i <= $cant ; $i++) { 
-     
+      echo '<div class=" shadow-lg p-3 mb-5 bg-light rounded col-lg-5 " >';
       echo '<table class="table ">
       <tr><th scope="col" >';
       echo 'El Empleado : '.$_POST["textnom$i"].
@@ -39,7 +39,7 @@ if (isset($_POST["txtcant"])) {
       </div>
 
       ';
-      echo '
+      echo '<div class="col-lg-1 bg-white">
     <br>
     </div>';
       $sum2 = ($sum2 + $sum) ;
@@ -47,13 +47,16 @@ if (isset($_POST["txtcant"])) {
     }
     
     echo'<br></div>';
-    echo '<div  ><h3>La sumatoria de Horas de los empleados son '.$sum2.' h';
+    echo '<div class="container bg-light shadow-none p-3 mb-5" ><h3>La sumatoria de Horas de los empleados son '.$sum2.' h';
     echo '<br>';
     echo 'El costo de salarios es: ₡ '.($sum2 * 10);
-    echo '</body>';
+    echo '<a href="ejercicio4.php" class="btn btn-danger" >Go Back xd...</a><br><br><br></div></body>';
     echo '</h3></div>
     <br>
-    
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>   
+    </div>
+    </div>
     ';
 }
 ?>
